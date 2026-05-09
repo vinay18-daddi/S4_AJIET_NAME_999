@@ -1,0 +1,19 @@
+import java.util.ArrayList;
+
+public class Main {
+    public static void main(String[] args) {
+        ArrayList<String> names = new ArrayList<>();
+
+        names.add("manvith");
+        names.add("vinay");
+        names.add("Charlie");
+        names.get(1);
+        names.remove(2);
+        names.set(1,"bhavith");
+
+        System.out.println(names);       
+        System.out.println(names.get(1)); 
+        names.clear();
+           
+    }
+}
