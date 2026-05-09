@@ -1,0 +1,22 @@
+import java.util.Collections;
+import java.util.LinkedList;
+
+public class Main {
+    public static void main(String[] args) {
+
+        LinkedList<Integer> names = new LinkedList<>();
+
+        names.addFirst(5);
+        names.addFirst(10);
+        names.addLast(1);
+
+        names.removeFirst();
+        names.removeLast();
+
+        names.addFirst(15);
+
+        Collections.sort(names, Collections.reverseOrder());
+
+        System.out.println(names);
+    }
+}
