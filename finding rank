@@ -1,0 +1,20 @@
+public class Main {
+
+    static int[] arr = {4, 3, 7, 2, 6, 1};
+    static int n = arr.length;
+
+    public static void main(String[] args) {
+
+        int minRank = arr[0];
+        int count = 0;
+
+        for (int i = 1; i < n; i++) {
+            if (arr[i] < minRank) {
+                count++;
+                minRank = arr[i];
+            }
+        }
+
+        System.out.println(count);
+    }
+}
