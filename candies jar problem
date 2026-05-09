@@ -1,0 +1,28 @@
+public class Main {
+    public static void main(String[] args) {
+       int Jarc=10;//capacity of jar
+       int N=10;
+       int f=6;      // cadies that customer wants
+       int min=3;    //minimum candies that should be present in a jarand refill if jar has minimum
+       
+       int total=N;
+       int count=0;
+       if (N >Jarc)
+       
+           System.out.println( "cannote store all the candies");
+       
+       if (f<=N)
+       {
+           total=total-f;
+           count=count+f;
+             System.out.println( "Number of candies sold:"+f);
+       }   
+           if(total<=min)
+           {
+               total=N;
+           }
+           
+           System.out.println( "Number of candies remaining:"+total);
+       
+    }
+}
